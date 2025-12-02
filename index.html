@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai landing page</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            background: linear-gradient(to right, #009fff, #ec2f4b)
+        }
+        .card{
+            text-align: center;
+            background-color: black;
+            color: aliceblue;
+            padding-bottom: 40px;
+            border-radius: 2%;
+            max-width: 400px;
+            width: 90%;
+        }
+        .logo{
+            width: 150px;
+            height: 200px;
+            object-fit: contain;
+
+        }
+        p{
+            padding:20px 20px 0px 20px;
+            color: rgb(193, 217, 217);
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            padding:40px;
+            gap: 20px;
+        }
+        input[type="email"]{
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            
+        }
+        button{
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bolder;
+            font-size: medium;
+            background-color:cornflowerblue;
+            cursor: pointer;
+            transition:background-color 0.3s ease-in-out;
+        }
+        button:hover{
+            background-color: #7149ac;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img  src="https://pbs.twimg.com/profile_images/1946548955229065217/IJJTv70z_400x400.jpg" alt="" class="logo">
+            <h1>Coming Soon</h1>
+            <p>We are working hard to bring something amazing. Stay tuned!</p>
+            <form action="">
+                <input type="email" placeholder="Email" required>
+                <button type="submit">Notify Me!</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
